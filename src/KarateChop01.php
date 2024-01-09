@@ -28,13 +28,12 @@ class KarateChop01 implements KarateChopAlgorithmInterface
                 return $pointer;
             }
             if ($firstHalfValue > $numberToLookFor) {
-                if ($firsthalf === $sortedArray) {
-                    return -1;
-                }
                 $sortedArray = $firsthalf;
             } else {
                 $sortedArray = $secondhalf;
             }
         }
+
+        return -1;
     }
 }
